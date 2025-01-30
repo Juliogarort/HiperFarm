@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="hiperfarm.png" alt="HiperFarm Logo" width="400">
+  <img src="hiperfarm.jpg" alt="HiperFarm Logo" width="400">
 </p>
 
 <h1 align="center">HiperFarm - Nutrición Animal y Equipamiento Agropecuario 🐴🌿</h1>
