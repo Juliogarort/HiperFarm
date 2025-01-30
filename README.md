@@ -1,13 +1,13 @@
 <p align="center">
-  <img src="Logo-sdsur.png" alt="SDSUR Logo" width="400">
+  <img src="hiperfarm.png" alt="HiperFarm Logo" width="400">
 </p>
 
-<h1 align="center">SDSUR - Nutrición Animal y Equipamiento Agropecuario 🐴🌿</h1>
+<h1 align="center">HiperFarm - Nutrición Animal y Equipamiento Agropecuario 🐴🌿</h1>
 
 ---
 
 <h2 align="center">📌 Sobre Nosotros</h2>  
-<p>En <strong>SDSUR</strong>, nos especializamos en ofrecer una amplia variedad de piensos para distintos tipos de animales, desde ganado hasta mascotas, además de productos agrícolas esenciales. Nuestro compromiso está en la <strong>calidad, nutrición y sostenibilidad</strong> para garantizar lo mejor en el sector agropecuario.</p>
+<p>En <strong>HiperFarm</strong>, nos especializamos en ofrecer una amplia variedad de piensos para distintos tipos de animales, desde ganado hasta mascotas, además de productos agrícolas esenciales. Nuestro compromiso está en la <strong>calidad, nutrición y sostenibilidad</strong> para garantizar lo mejor en el sector agropecuario.</p>
 
 ## 🛠 Tecnologías y Herramientas  
 Este repositorio alberga el desarrollo de nuestra plataforma web, donde implementamos tecnologías modernas para una experiencia óptima:
