@@ -1,96 +1,156 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="es">
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Hiperfarm - Líder en nutrición animal y equipamiento agropecuario" />
     <title>Hiperfarm</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" />
     <link rel="stylesheet" href="Css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Bitter:400,700"
-    />
-  </head>
-
-  <body>
-    <div>
-      <div class="header-dark">
-        <nav
-          class="navbar navbar-dark navbar-expand-md navigation-clean-search"
-        >
-          <div class="container">
-            <a class="navbar-brand" href="#">Hiperfarm</a
-            ><button
-              class="navbar-toggler"
-              data-toggle="collapse"
-              data-target="#navcol-1"
-            >
-              <span class="sr-only">Toggle navigation</span
-              ><span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navcol-1">
-              <ul class="nav navbar-nav">
-                <li class="nav-item" role="presentation">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="dropdown">
-                  <a
-                    class="dropdown-toggle nav-link dropdown-toggle"
-                    data-toggle="dropdown"
-                    aria-expanded="false"
-                    href="#"
-                    >Dropdown
-                  </a>
-                  <div class="dropdown-menu" role="menu">
-                    <a class="dropdown-item" role="presentation" href="#"
-                      >First Item</a
-                    ><a class="dropdown-item" role="presentation" href="#"
-                      >Second Item</a
-                    ><a class="dropdown-item" role="presentation" href="#"
-                      >Third Item</a
-                    >
-                  </div>
-                </li>
-              </ul>
-              <form class="form-inline mr-auto" target="_self">
-                <div class="form-group">
-                  <label for="search-field"><i class="fa fa-search"></i></label
-                  ><input
-                    class="form-control search-field"
-                    type="search"
-                    name="search"
-                    id="search-field"
-                  />
+</head>
+<body>
+    <!-- Header -->
+    <header class="header-main">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <!-- Alineación centrada para móviles/tablets, izquierda para escritorios -->
+                <div class="d-flex flex-column align-items-center align-items-lg-start mobile-header">
+                    <a class="navbar-brand d-flex align-items-center mb-3 mb-lg-0" href="#">
+                        <img src="hiperfarm.jpg" alt="Hiperfarm Logo" class="logo" height="50">
+                    </a>
+                    <button class="navbar-toggler mt-3" data-toggle="collapse" data-target="#navbarMain">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                 </div>
-              </form>
-              <span class="navbar-text"
-                ><a href="#" class="login">Log In</a></span
-              ><a class="btn btn-light action-button" role="button" href="#"
-                >Sign Up</a
-              >
+                <div class="collapse navbar-collapse justify-content-center justify-content-lg-start w-100" id="navbarMain">
+                    <ul class="navbar-nav mx-auto mx-lg-0 text-center text-lg-left">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="productosDropdown" data-toggle="dropdown">
+                                Productos
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#nutricion">Nutrición Animal</a>
+                                <a class="dropdown-item" href="#equipamiento">Equipamiento Agropecuario</a>
+                                <a class="dropdown-item" href="#suplementos">Suplementos</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#servicios">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="search-form mx-lg-3 d-flex mt-3 mt-lg-0">
+                        <input type="search" class="form-control" placeholder="Buscar productos...">
+                        <button type="submit" class="btn btn-outline-success ml-2"><i class="fas fa-search"></i></button>
+                    </form>
+                    <div class="nav-buttons d-flex align-items-center mt-3 mt-lg-0">
+                        <a href="#login" class="btn btn-outline-secondary mr-2">Iniciar Sesión</a>
+                        <a href="#registro" class="btn btn-dark">Registrarse</a>
+                    </div>
+                </div>
             </div>
-          </div>
         </nav>
-        <div class="container hero">
-          <div class="row">
-            <div class="col-md-8 offset-md-2">
-              <h1 class="text-center">The Revolution is Here.</h1>
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item"></iframe>
-              </div>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="text-white mb-4">Soluciones Integrales para el Campo</h1>
+                    <p class="lead text-white mb-4">Nutrición animal de calidad y equipamiento agropecuario de última generación para optimizar su producción.</p>
+                    <div class="hero-buttons">
+                        <a href="#productos" class="btn btn-success btn-lg px-4">Ver Productos</a>
+                        <a href="#contacto" class="btn btn-outline-light btn-lg ml-3">Contáctenos</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0">
+                    <div class="hero-image">
+                        <img src="img/Render-Fachada.jpg" alt="Granja moderna" class="img-fluid rounded shadow">
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+    </section>
+    <!-- Main Content -->
+    <main class="content-main">
+        <!-- Características Principales -->
+        <section class="features-section">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <div class="feature-card">
+                            <i class="fas fa-leaf text-success mb-4"></i>
+                            <h3 class="h4 mb-3">Nutrición Premium</h3>
+                            <p class="text-muted mb-0">Productos de alta calidad para el óptimo desarrollo de su ganado.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <div class="feature-card">
+                            <i class="fas fa-tools text-success mb-4"></i>
+                            <h3 class="h4 mb-3">Equipamiento Moderno</h3>
+                            <p class="text-muted mb-0">Tecnología de vanguardia para maximizar su producción.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-card">
+                            <i class="fas fa-users text-success mb-4"></i>
+                            <h3 class="h4 mb-3">Asesoría Experta</h3>
+                            <p class="text-muted mb-0">Equipo profesional para guiarlo en cada decisión.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+<footer class="footer-main text-white">
+    <div class="container-fluid p-0">
+        <div class="row no-gutters align-items-center">
+            <!-- Sección de Información Principal -->
+            <div class="col-lg-6 col-md-12 p-4 text-center text-lg-left">
+                <h4 class="h5 mb-3">Hiperfarm</h4>
+                <p class="mb-0">Líderes en soluciones agropecuarias integrales desde 1995.</p>
+                <a href="#inicio" class="text-white d-block mt-3">Volver al Inicio</a>
+            </div>
+            <!-- Sección de Contacto -->
+            <div class="col-lg-3 col-md-6 p-4 text-center text-lg-left">
+                <h4 class="h5 mb-3">Contacto</h4>
+                <ul class="contact-info list-unstyled">
+                    <li><i class="fas fa-map-marker-alt"></i> Av. Principal 123, Ciudad</li>
+                    <li><i class="fas fa-phone"></i> +123 456 789</li>
+                    <li><i class="fas fa-envelope"></i> info@hiperfarm.com</li>
+                </ul>
+            </div>
+            <!-- Sección de Redes Sociales y Mapa del Sitio -->
+            <div class="col-lg-3 col-md-6 p-4 text-center text-lg-left">
+                <h4 class="h5 mb-3">Síguenos</h4>
+                <div class="social-links d-flex justify-content-center justify-content-lg-start">
+                    <a href="#" class="text-white mr-3"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white mr-3"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="#mapa-sitio" class="text-white d-block mt-3">Mapa del Sitio</a>
+            </div>
+        </div>
+        <!-- Línea Divisoria -->
+        <div class="border-top border-light my-4"></div>
+        <!-- Derechos de Autor -->
+        <div class="row no-gutters">
+            <div class="col-12 text-center py-3">
+                <small>&copy; 2023 Hiperfarm. Todos los derechos reservados.</small>
+            </div>
+        </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</footer>
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-  </body>
+</body>
 </html>
