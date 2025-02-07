@@ -1,158 +1,235 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Hiperfarm - Líder en nutrición animal y equipamiento agropecuario" />
-    <link rel="icon" type="image/png" href="img/Logo-Hiperfarm.png">
+    <meta
+      name="description"
+      content="Hiperfarm - Líder en nutrición animal y equipamiento agropecuario"
+    />
+    <link rel="icon" type="image/png" href="img/Logo-Hiperfarm.png" />
     <title>Hiperfarm</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
+    />
     <link rel="stylesheet" href="Css/style.css" />
-</head>
-<body>
-<!-- Header -->
-<header class="header-main">
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+  </head>
+  <body>
+        <!-- ---------------------------------------------------------------------------------- -->
+
+    <!-- Header -->
+    <header class="header-main">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container-fluid">
-            <!-- Logo - Zona Izquierda -->
-            <a class="navbar-brand" href="#">
-                <img src="hiperfarm.jpg" alt="Hiperfarm Logo" class="logo" height="50">
-            </a>
+          <!-- Logo - Zona Izquierda -->
+          <a class="navbar-brand" href="#">
+            <img
+              src="/img/hiperfarm.png"
+              alt="Hiperfarm Logo"
+              class="logo"
+              height="50"
+            />
+          </a>
 
-            <!-- Botón Toggle para móvil -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+          <!-- Botón Toggle para móvil -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarMain"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-            <!-- Contenido del Navbar - Zona Central y Derecha -->
-            <div class="collapse navbar-collapse" id="navbarMain">
-                <!-- Links de Navegación - Zona Central -->
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#inicio">Inicio</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="Vistas/producto.html" id="productosDropdown" data-toggle="dropdown">
-                            Productos
-                        </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="Vistas/producto.html">Nutrición Animal</a>
-                            <a class="dropdown-item" href="#Vistas/producto.html">Equipamiento Agropecuario</a>
-                            <a class="dropdown-item" href="#Vistas/producto.html">Suplementos</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#servicios">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contacto">Contacto</a>
-                    </li>
-                </ul>
-
-                <!-- Botones de Autenticación - Zona Derecha -->
-                <div class="nav-buttons ms-auto">
-                    <a href="#login" class="btn btn-outline-secondary me-2">Iniciar Sesión</a>
-                    <a href="#registro" class="btn btn-dark">Registrarse</a>
+          <!-- Contenido del Navbar - Zona Central y Derecha -->
+          <div class="collapse navbar-collapse" id="navbarMain">
+            <!-- Links de Navegación - Zona Central -->
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#inicio">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="Vistas/producto.html"
+                  id="productosDropdown"
+                  data-toggle="dropdown"
+                >
+                  Productos
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="Vistas/producto.html"
+                    >Nutrición Animal</a
+                  >
+                  <a class="dropdown-item" href="#Vistas/producto.html"
+                    >Equipamiento Agropecuario</a
+                  >
+                  <a class="dropdown-item" href="#Vistas/producto.html"
+                    >Suplementos</a
+                  >
                 </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#servicios">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+              </li>
+            </ul>
+
+            <!-- Botones de Autenticación - Zona Derecha -->
+            <div class="nav-buttons ms-auto">
+              <a href="#login" class="btn btn-outline-secondary me-2"
+                >Iniciar Sesión</a
+              >
+              <a href="#registro" class="btn btn-dark">Registrarse</a>
             </div>
+          </div>
         </div>
-    </nav>
-</header>
+      </nav>
+    </header>
     <!-- Hero Section -->
     <section class="hero-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h1 class="text-white mb-4">Soluciones Integrales para el Campo</h1>
-                    <p class="lead text-white mb-4">Nutrición animal de calidad y equipamiento agropecuario de última generación para optimizar su producción.</p>
-                    <div class="hero-buttons">
-                        <a href="#productos" class="btn btn-success btn-lg px-4">Ver Productos</a>
-                        <a href="#contacto" class="btn btn-outline-light btn-lg ml-3">Contáctenos</a>
-                    </div>
-                </div>
-                <div class="col-lg-6 mt-5 mt-lg-0">
-                    <div class="hero-image">
-                        <img src="img/Render-Fachada.jpg" alt="Granja moderna" class="img-fluid rounded shadow">
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h1 class="text-white mb-4">Soluciones Integrales para el Campo</h1>
+            <p class="lead text-white mb-4">
+              Nutrición animal de calidad y equipamiento agropecuario de última
+              generación para optimizar su producción.
+            </p>
+            <div class="hero-buttons">
+              <a href="#productos" class="btn btn-success btn-lg px-4"
+                >Ver Productos</a
+              >
+              <a href="#contacto" class="btn btn-outline-light btn-lg ml-3"
+                >Contáctenos</a
+              >
             </div>
+          </div>
+          <div class="col-lg-6 mt-5 mt-lg-0">
+            <div class="hero-image">
+              <img
+                src="img/Render-Fachada.jpg"
+                alt="Granja moderna"
+                class="img-fluid rounded shadow"
+              />
+            </div>
+          </div>
         </div>
+      </div>
     </section>
+
+    <!-- ---------------------------------------------------------------------------------- -->
+
     <!-- Main Content -->
     <main class="content-main">
-        <!-- Características Principales -->
-        <section class="features-section">
-            <div class="container py-5">
-                <div class="row">
-                    <div class="col-md-4 mb-4 mb-md-0">
-                        <div class="feature-card">
-                            <i class="fas fa-leaf text-success mb-4"></i>
-                            <h3 class="h4 mb-3">Nutrición Premium</h3>
-                            <p class="text-muted mb-0">Productos de alta calidad para el óptimo desarrollo de su ganado.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4 mb-md-0">
-                        <div class="feature-card">
-                            <i class="fas fa-tools text-success mb-4"></i>
-                            <h3 class="h4 mb-3">Equipamiento Moderno</h3>
-                            <p class="text-muted mb-0">Tecnología de vanguardia para maximizar su producción.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="feature-card">
-                            <i class="fas fa-users text-success mb-4"></i>
-                            <h3 class="h4 mb-3">Asesoría Experta</h3>
-                            <p class="text-muted mb-0">Equipo profesional para guiarlo en cada decisión.</p>
-                        </div>
-                    </div>
-                </div>
+      <!-- Características Principales -->
+      <section class="features-section">
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-md-4 mb-4 mb-md-0">
+              <div class="feature-card">
+                <i class="fas fa-leaf text-success mb-4"></i>
+                <h3 class="h4 mb-3">Nutrición Premium</h3>
+                <p class="text-muted mb-0">
+                  Productos de alta calidad para el óptimo desarrollo de su
+                  ganado.
+                </p>
+              </div>
             </div>
-        </section>
+            <div class="col-md-4 mb-4 mb-md-0">
+              <div class="feature-card">
+                <i class="fas fa-tools text-success mb-4"></i>
+                <h3 class="h4 mb-3">Equipamiento Moderno</h3>
+                <p class="text-muted mb-0">
+                  Tecnología de vanguardia para maximizar su producción.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="feature-card">
+                <i class="fas fa-users text-success mb-4"></i>
+                <h3 class="h4 mb-3">Asesoría Experta</h3>
+                <p class="text-muted mb-0">
+                  Equipo profesional para guiarlo en cada decisión.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <!-- ---------------------------------------------------------------------------------- -->
     <!-- Footer -->
-<footer class="footer-main text-white">
-    <div class="container-fluid p-0">
+    <footer class="footer-main text-white">
+      <div class="container-fluid p-0">
         <div class="row no-gutters align-items-center">
-            <!-- Sección de Información Principal -->
-            <div class="col-lg-6 col-md-12 p-4 text-center text-lg-left">
-                <h4 class="h5 mb-3">Hiperfarm</h4>
-                <p class="mb-0">Líderes en soluciones agropecuarias integrales desde 1995.</p>
-                <a href="#inicio" class="text-white d-block mt-3">Volver al Inicio</a>
+          <!-- Sección de Información Principal -->
+          <div class="col-lg-6 col-md-12 p-4 text-center text-lg-left">
+            <h4 class="h5 mb-3">Hiperfarm</h4>
+            <p class="mb-0">
+              Líderes en soluciones agropecuarias integrales desde 1995.
+            </p>
+            <a href="#inicio" class="text-white d-block mt-3"
+              >Volver al Inicio</a
+            >
+          </div>
+          <!-- Sección de Contacto -->
+          <div class="col-lg-3 col-md-6 p-4 text-center text-lg-left">
+            <h4 class="h5 mb-3">Contacto</h4>
+            <ul class="contact-info list-unstyled">
+              <li>
+                <i class="fas fa-map-marker-alt"></i> Av. Principal 123, Ciudad
+              </li>
+              <li><i class="fas fa-phone"></i> +123 456 789</li>
+              <li><i class="fas fa-envelope"></i> info@hiperfarm.com</li>
+            </ul>
+          </div>
+          <!-- Sección de Redes Sociales y Mapa del Sitio -->
+          <div class="col-lg-3 col-md-6 p-4 text-center text-lg-left">
+            <h4 class="h5 mb-3">Síguenos</h4>
+            <div
+              class="social-links d-flex justify-content-center justify-content-lg-start"
+            >
+              <a href="#" class="text-white mr-3"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="text-white mr-3"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-white"><i class="fab fa-linkedin"></i></a>
             </div>
-            <!-- Sección de Contacto -->
-            <div class="col-lg-3 col-md-6 p-4 text-center text-lg-left">
-                <h4 class="h5 mb-3">Contacto</h4>
-                <ul class="contact-info list-unstyled">
-                    <li><i class="fas fa-map-marker-alt"></i> Av. Principal 123, Ciudad</li>
-                    <li><i class="fas fa-phone"></i> +123 456 789</li>
-                    <li><i class="fas fa-envelope"></i> info@hiperfarm.com</li>
-                </ul>
-            </div>
-            <!-- Sección de Redes Sociales y Mapa del Sitio -->
-            <div class="col-lg-3 col-md-6 p-4 text-center text-lg-left">
-                <h4 class="h5 mb-3">Síguenos</h4>
-                <div class="social-links d-flex justify-content-center justify-content-lg-start">
-                    <a href="#" class="text-white mr-3"><i class="fab fa-facebook"></i></a>
-                    <a href="#" class="text-white mr-3"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="text-white"><i class="fab fa-linkedin"></i></a>
-                </div>
-                <a href="#mapa-sitio" class="text-white d-block mt-3">Mapa del Sitio</a>
-            </div>
+            <a href="#mapa-sitio" class="text-white d-block mt-3"
+              >Mapa del Sitio</a
+            >
+          </div>
         </div>
         <!-- Línea Divisoria -->
         <div class="border-top border-light my-4"></div>
         <!-- Derechos de Autor -->
         <div class="row no-gutters">
-            <div class="col-12 text-center py-3">
-                <small>&copy; 2023 Hiperfarm. Todos los derechos reservados.</small>
-            </div>
+          <div class="col-12 text-center py-3">
+            <small>&copy; 2023 Hiperfarm. Todos los derechos reservados.</small>
+          </div>
         </div>
-    </div>
-</footer>
+      </div>
+    </footer>
+
+    <!-- ---------------------------------------------------------------------------------- -->
+
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
