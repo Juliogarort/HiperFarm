@@ -69,32 +69,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
 }
 
-/* Barra de búsqueda */
-.search-form {
-    position: relative;
-    width: 300px;
-}
 
-.search-form input {
-    padding: 0.75rem 1rem;
-    border-radius: 50px;
-    border: 2px solid var(--light-color);
-    width: 100%;
-}
-
-.search-form button {
-    position: absolute;
-    right: 5px;
-    top: 50%;
-    transform: translateY(-50%);
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 /* Botones de autenticación */
 .nav-buttons {
@@ -113,12 +88,7 @@ h1, h2, h3, h4, h5, h6 {
         margin: 1rem 0;
         text-align: center;
     }
-
-    .search-form {
-        width: 100%;
-        margin: 1rem 0;
-    }
-
+    
     .nav-buttons {
         margin-top: 1rem;
         justify-content: center;
@@ -145,37 +115,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--primary-color);
 }
 
-/* Formulario de búsqueda mejorado */
-.search-form {
-  position: relative;
-  max-width: 300px;
-}
 
-.search-form input {
-  padding: 0.75rem 1rem;
-  border-radius: 50px;
-  border: 2px solid var(--light-color);
-  transition: var(--transition);
-}
-
-.search-form input:focus {
-  border-color: var(--primary-color);
-  box-shadow: none;
-}
-
-.search-form button {
-  position: absolute;
-  right: 5px;
-  top: 50%;
-  transform: translateY(-50%);
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 /* Hero Section */
 .hero-section {

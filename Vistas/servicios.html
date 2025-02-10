@@ -1,205 +1,394 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Servicios de Hiperfarm - Líderes en nutrición animal y estudios agrícolas" />
-    <link rel="icon" type="image/png" href="img/Logo-Hiperfarm.png" />
-    <title>Servicios - Hiperfarm</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" />
-    <link rel="stylesheet" href="../Css/servicios.css">
-    <link rel="stylesheet" href="Css/style.css">
-</head>
-<body>
-    <!-- Header se mantiene igual que en el ejemplo anterior -->
+    <meta
+      name="description"
+      content="Hiperfarm - Líder en nutrición animal y equipamiento agropecuario"
+    />
+    <link rel="icon" type="image/png" href="../img/Logo-Hiperfarm.png" />
+    <title>Productos - Hiperfarm</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
+    />
+    <link rel="stylesheet" href="../Css/servicios.css" />
 
-    <!-- Nueva sección Hero con contenido mejorado -->
-    <section class="hero-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h1 class="text-white mb-4">Experiencia y Excelencia en el Sector Agropecuario</h1>
-                    <p class="lead text-white mb-4">
-                        Con más de 25 años de trayectoria, Hiperfarm se ha consolidado como líder en el sector, 
-                        proporcionando soluciones innovadoras y sostenibles para la agricultura moderna.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#contacto" class="btn btn-success btn-lg px-4">Solicitar Asesoría</a>
-                        <a href="#proceso" class="btn btn-outline-light btn-lg ml-3">Ver Proceso</a>
-                    </div>
+    <link rel="stylesheet" href="../Css/style.css" />
+  </head>
+  <body>
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+
+    <!-- Header -->
+    <header class="header-main">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container-fluid">
+          <!-- Logo - Zona Izquierda -->
+          <a class="navbar-brand" href="../index.html">
+            <img
+              src="/img/hiperfarm.png"
+              alt="Hiperfarm Logo"
+              class="logo"
+              height="50"
+            />
+          </a>
+
+          <!-- Botón Toggle para móvil -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarMain"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Contenido del Navbar - Zona Central y Derecha -->
+          <div class="collapse navbar-collapse" id="navbarMain">
+            <!-- Links de Navegación - Zona Central -->
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="producto.html"
+                  id="productosDropdown"
+                  data-toggle="dropdown"
+                >
+                  Productos
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="producto.html"
+                    >Nutrición Animal</a
+                  >
+                  <a class="dropdown-item" href="producto.html"
+                    >Equipamiento Agropecuario</a
+                  >
+                  <a class="dropdown-item" href="producto.html">Suplementos</a>
                 </div>
-                <div class="col-lg-6 mt-5 mt-lg-0">
-                    <div class="hero-image floating-image">
-                        <img src="../img/servicios-hero.jpg" alt="Servicios agropecuarios" class="img-fluid rounded shadow" />
-                    </div>
-                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+
+            <!-- Botones de Autenticación - Zona Derecha -->
+            <div class="nav-buttons ms-auto">
+              <a href="#login" class="btn btn-outline-secondary me-2"
+                >Iniciar Sesión</a
+              >
+              <a href="#registro" class="btn btn-dark">Registrarse</a>
             </div>
+          </div>
         </div>
+      </nav>
+    </header>
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+
+    <section class="hero-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h1 class="text-white mb-4">
+              Experiencia y Excelencia en el Sector Agropecuario
+            </h1>
+            <p class="lead text-white mb-4">
+              Con más de 25 años de trayectoria, Hiperfarm se ha consolidado
+              como líder en el sector, proporcionando soluciones innovadoras y
+              sostenibles para la agricultura moderna.
+            </p>
+            <div class="hero-buttons">
+              <a href="../Vistas/contacto.html" class="btn btn-success btn-lg px-4"
+                >Solicitar Asesoría</a
+              >
+              <a href="#proceso" class="btn btn-outline-light btn-lg ml-3"
+                >Ver Proceso</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-6 mt-5 mt-lg-0">
+            <div class="hero-image floating-image">
+              <img
+                src="../img/Merchandising.jpg"
+                alt="Servicios agropecuarios"
+                class="img-fluid rounded shadow"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <main>
-        <!-- Sección de Experiencia -->
-        <section class="expertise-section" id="experiencia">
-            <div class="container">
-                <h2 class="text-center mb-5">Nuestra Experiencia en Números</h2>
-                <div class="row">
-                    <div class="col-md-3 col-sm-6">
-                        <div class="expertise-card text-center">
-                            <span class="achievement-counter" data-target="25">0</span>
-                            <h3 class="h5">Años de Experiencia</h3>
-                            <p>Liderando la innovación en el sector agropecuario</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="expertise-card text-center">
-                            <span class="achievement-counter" data-target="5000">0</span>
-                            <h3 class="h5">Clientes Satisfechos</h3>
-                            <p>Confían en nuestra experiencia y resultados</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="expertise-card text-center">
-                            <span class="achievement-counter" data-target="150">0</span>
-                            <h3 class="h5">Profesionales</h3>
-                            <p>Expertos dedicados a tu éxito</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="expertise-card text-center">
-                            <span class="achievement-counter" data-target="98">0</span>
-                            <h3 class="h5">% Efectividad</h3>
-                            <p>En mejora de rendimiento agrícola</p>
-                        </div>
-                    </div>
-                </div>
+      <!-- Sección de Experiencia -->
+      <section class="expertise-section" id="experiencia">
+        <div class="container">
+          <h2 class="text-center mb-5">Nuestra Experiencia en Números</h2>
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <div class="expertise-card text-center">
+                <span class="achievement-counter" data-target="25">0</span>
+                <h3 class="h5">Años de Experiencia</h3>
+                <p>Liderando la innovación en el sector agropecuario</p>
+              </div>
             </div>
-        </section>
+            <div class="col-md-3 col-sm-6">
+              <div class="expertise-card text-center">
+                <span class="achievement-counter" data-target="5000">0</span>
+                <h3 class="h5">Clientes Satisfechos</h3>
+                <p>Confían en nuestra experiencia y resultados</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="expertise-card text-center">
+                <span class="achievement-counter" data-target="150">0</span>
+                <h3 class="h5">Profesionales</h3>
+                <p>Expertos dedicados a tu éxito</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="expertise-card text-center">
+                <span class="achievement-counter" data-target="98">0</span>
+                <h3 class="h5">% Efectividad</h3>
+                <p>En mejora de rendimiento agrícola</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <!-- Sección de Proceso -->
-        <section class="service-process" id="proceso">
-            <div class="container">
-                <h2 class="text-center mb-5">Nuestro Proceso de Trabajo</h2>
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="process-step">
-                            <div class="process-icon">
-                                <i class="fas fa-search"></i>
-                            </div>
-                            <h3 class="h5">Análisis Inicial</h3>
-                            <p>Evaluación completa de necesidades y objetivos</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="process-step">
-                            <div class="process-icon">
-                                <i class="fas fa-flask"></i>
-                            </div>
-                            <h3 class="h5">Diagnóstico</h3>
-                            <p>Estudios técnicos y análisis de laboratorio</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="process-step">
-                            <div class="process-icon">
-                                <i class="fas fa-cogs"></i>
-                            </div>
-                            <h3 class="h5">Implementación</h3>
-                            <p>Aplicación de soluciones personalizadas</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="process-step">
-                            <div class="process-icon">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <h3 class="h5">Seguimiento</h3>
-                            <p>Monitoreo continuo y ajustes necesarios</p>
-                        </div>
-                    </div>
+      <!-- Sección de Proceso -->
+      <section class="service-process" id="proceso">
+        <div class="container">
+          <h2 class="text-center mb-5">Nuestro Proceso de Trabajo</h2>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="process-step">
+                <div class="process-icon">
+                  <i class="fas fa-search"></i>
                 </div>
+                <h3 class="h5">Análisis Inicial</h3>
+                <p>Evaluación completa de necesidades y objetivos</p>
+              </div>
             </div>
-        </section>
-
-        <!-- Sección Destacada -->
-        <section class="highlight-box">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-8">
-                        <h2>¿Por qué elegir Hiperfarm?</h2>
-                        <p class="lead mb-4">
-                            Somos pioneros en la implementación de tecnologías avanzadas para el sector agropecuario.
-                            Nuestro compromiso con la innovación y la sostenibilidad nos diferencia en el mercado.
-                        </p>
-                        <ul class="list-unstyled">
-                            <li class="mb-2"><i class="fas fa-check-circle mr-2"></i> Tecnología de última generación</li>
-                            <li class="mb-2"><i class="fas fa-check-circle mr-2"></i> Equipo altamente capacitado</li>
-                            <li class="mb-2"><i class="fas fa-check-circle mr-2"></i> Soluciones personalizadas</li>
-                            <li class="mb-2"><i class="fas fa-check-circle mr-2"></i> Resultados garantizados</li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4 text-center">
-                        <i class="fas fa-award" style="font-size: 8rem; opacity: 0.8;"></i>
-                    </div>
+            <div class="col-md-3">
+              <div class="process-step">
+                <div class="process-icon">
+                  <i class="fas fa-flask"></i>
                 </div>
+                <h3 class="h5">Diagnóstico</h3>
+                <p>Estudios técnicos y análisis de laboratorio</p>
+              </div>
             </div>
-        </section>
-
-        <!-- Testimonios -->
-        <section class="testimonial-section">
-            <div class="container">
-                <h2 class="text-center mb-5">Lo que dicen nuestros clientes</h2>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="testimonial-card text-center">
-                            <img src="/api/placeholder/80/80" alt="Cliente" class="client-image"/>
-                            <h4>Juan Pérez</h4>
-                            <p class="text-muted">Ganadero</p>
-                            <p>"La asesoría de Hiperfarm ha transformado la productividad de mi finca. Los resultados han sido impresionantes."</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="testimonial-card text-center">
-                            <img src="/api/placeholder/80/80" alt="Cliente" class="client-image"/>
-                            <h4>María González</h4>
-                            <p class="text-muted">Agricultora</p>
-                            <p>"Gracias a las soluciones de nutrición animal de Hiperfarm, hemos mejorado la salud de nuestro ganado y la eficiencia en la producción."</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="testimonial-card text-center">
-                            <img src="/api/placeholder/80/80" alt="Cliente" class="client-image"/>
-                            <h4>Carlos Ramírez</h4>
-                            <p class="text-muted">Productor agrícola</p>
-                            <p>"El equipo de Hiperfarm nos proporcionó un diagnóstico detallado y soluciones personalizadas que aumentaron el rendimiento de nuestras cosechas."</p>
-                        </div>
-                    </div>
+            <div class="col-md-3">
+              <div class="process-step">
+                <div class="process-icon">
+                  <i class="fas fa-cogs"></i>
                 </div>
+                <h3 class="h5">Implementación</h3>
+                <p>Aplicación de soluciones personalizadas</p>
+              </div>
             </div>
-        </section>
+            <div class="col-md-3">
+              <div class="process-step">
+                <div class="process-icon">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <h3 class="h5">Seguimiento</h3>
+                <p>Monitoreo continuo y ajustes necesarios</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <!-- Sección CTA -->
-        <section class="cta-section" id="contacto">
-            <div class="container text-center">
-                <h2 class="text-white mb-4">¿Listo para llevar tu negocio agropecuario al siguiente nivel?</h2>
-                <p class="text-white mb-4">Contáctanos para recibir asesoría personalizada y soluciones innovadoras para tu finca o empresa agrícola.</p>
-                <a href="mailto:contacto@hiperfarm.com" class="btn btn-light btn-lg px-5">Contactar Ahora</a>
+      <!-- Sección Destacada -->
+      <section class="highlight-box">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <h2>¿Por qué elegir Hiperfarm?</h2>
+              <p class="lead mb-4">
+                Somos pioneros en la implementación de tecnologías avanzadas
+                para el sector agropecuario. Nuestro compromiso con la
+                innovación y la sostenibilidad nos diferencia en el mercado.
+              </p>
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <i class="fas fa-check-circle mr-2"></i> Tecnología de última
+                  generación
+                </li>
+                <li class="mb-2">
+                  <i class="fas fa-check-circle mr-2"></i> Equipo altamente
+                  capacitado
+                </li>
+                <li class="mb-2">
+                  <i class="fas fa-check-circle mr-2"></i> Soluciones
+                  personalizadas
+                </li>
+                <li class="mb-2">
+                  <i class="fas fa-check-circle mr-2"></i> Resultados
+                  garantizados
+                </li>
+              </ul>
             </div>
-        </section>
+            <div class="col-lg-4 text-center">
+              <i class="fas fa-award" style="font-size: 8rem; opacity: 0.8"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonios -->
+      <section class="testimonial-section">
+        <div class="container">
+          <h2 class="text-center mb-5">Lo que dicen nuestros clientes</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="testimonial-card text-center">
+                <img
+                  src="../img/titofloren.png"
+                  alt="Cliente"
+                  class="client-image"
+                />
+                <h4>Juan Pérez</h4>
+                <p class="text-muted">Ganadero</p>
+                <p>
+                  "La asesoría de Hiperfarm ha transformado la productividad de
+                  mi finca. Los resultados han sido impresionantes."
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="testimonial-card text-center">
+                <img
+                  src="../img/kiko.jpeg"
+                  alt="Cliente"
+                  class="client-image"
+                />
+                <h4>María González</h4>
+                <p class="text-muted">Agricultora</p>
+                <p>
+                  "Gracias a las soluciones de nutrición animal de Hiperfarm,
+                  hemos mejorado la salud de nuestro ganado y la eficiencia en
+                  la producción."
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="testimonial-card text-center">
+                <img
+                  src="../img/zeñor.jpg"
+                  alt="Cliente"
+                  class="client-image"
+                />
+                <h4>Carlos Ramírez</h4>
+                <p class="text-muted">Productor agrícola</p>
+                <p>
+                  "El equipo de Hiperfarm nos proporcionó un diagnóstico
+                  detallado y soluciones personalizadas que aumentaron el
+                  rendimiento de nuestras cosechas."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección CTA -->
+      <section class="cta-section" id="contacto">
+        <div class="container text-center">
+          <h2 class="text-white mb-4">
+            ¿Listo para llevar tu negocio agropecuario al siguiente nivel?
+          </h2>
+          <p class="text-white mb-4">
+            Contáctanos para recibir asesoría personalizada y soluciones
+            innovadoras para tu finca o empresa agrícola.
+          </p>
+          <a
+            href="mailto:contacto@hiperfarm.com"
+            class="btn btn-light btn-lg px-5"
+            >Contactar Ahora</a
+          >
+        </div>
+      </section>
     </main>
 
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+
     <!-- Footer -->
-    <footer class="footer bg-dark text-white py-4">
-        <div class="container text-center">
-            <p>&copy; 2025 Hiperfarm | Todos los derechos reservados</p>
-            <p><a href="https://www.hiperfarm.com/privacy" class="text-white">Política de privacidad</a> | <a href="https://www.hiperfarm.com/terms" class="text-white">Términos de servicio</a></p>
+    <footer class="footer-main text-white">
+      <div class="container-fluid p-0">
+        <div class="row no-gutters align-items-center">
+          <!-- Sección de Información Principal -->
+          <div class="col-lg-6 col-md-12 p-4 text-center text-lg-left">
+            <h4 class="h5 mb-3">Hiperfarm</h4>
+            <p class="mb-0">
+              Líderes en soluciones agropecuarias integrales desde 1995.
+            </p>
+            <a href="#inicio" class="text-white d-block mt-3"
+              >Volver al Inicio</a
+            >
+          </div>
+          <!-- Sección de Contacto -->
+          <div class="col-lg-3 col-md-6 p-4 text-center text-lg-left">
+            <h4 class="h5 mb-3">Contacto</h4>
+            <ul class="contact-info list-unstyled">
+              <li>
+                <i class="fas fa-map-marker-alt"></i> Av. Principal 123, Ciudad
+              </li>
+              <li><i class="fas fa-phone"></i> +123 456 789</li>
+              <li><i class="fas fa-envelope"></i> info@hiperfarm.com</li>
+            </ul>
+          </div>
+          <!-- Sección de Redes Sociales y Mapa del Sitio -->
+          <div class="col-lg-3 col-md-6 p-4 text-center text-lg-left">
+            <h4 class="h5 mb-3">Síguenos</h4>
+            <div
+              class="social-links d-flex justify-content-center justify-content-lg-start"
+            >
+              <a href="#" class="text-white mr-3"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="text-white mr-3"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-white"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <a href="#mapa-sitio" class="text-white d-block mt-3"
+              >Mapa del Sitio</a
+            >
+          </div>
         </div>
+        <!-- Línea Divisoria -->
+        <div class="border-top border-light my-4"></div>
+        <!-- Derechos de Autor -->
+        <div class="row no-gutters">
+          <div class="col-12 text-center py-3">
+            <small>&copy; 2023 Hiperfarm. Todos los derechos reservados.</small>
+          </div>
+        </div>
+      </div>
     </footer>
+    <!-- ---------------------------------------------------------------------------------------------------- -->
 
     <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
     <script>
         // Contador de logros animados
         $(document).ready(function() {
@@ -214,5 +403,5 @@
             });
         });
     </script>
-</body>
+  </body>
 </html>

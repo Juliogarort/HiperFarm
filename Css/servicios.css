@@ -1,152 +1,102 @@
-:root {
-    --primary-color: #7C9D7B;
-    --secondary-color: #1B1A1A;
-    --accent-color: #D9D9D9;
-    --white: #ffffff;
-    --shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
-    --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
-    --transition: all 0.3s ease;
-}
-
-/* Estilos base heredados del index */
-/* Aquí es donde deberías incluir tus estilos base si los tienes, o puedes eliminar este comentario si no es necesario. */
-
-/* Nuevos estilos específicos para servicios */
-.expertise-section {
-    background-color: var(--white);
-    padding: 80px 0;
+/* Hero Section */
+.hero-section {
+    background-color: var(--primary-color);
+    padding: 130px 0 60px;
     position: relative;
     overflow: hidden;
 }
 
+
+/* Expertise Section */
+.expertise-section {
+    padding: 80px 0;
+    background-color: var(--white);
+}
+
 .expertise-card {
-    border-radius: 15px;
-    padding: 2rem;
-    margin-bottom: 30px;
+    padding: 30px;
     background: var(--white);
+    border-radius: 16px;
     box-shadow: var(--shadow-sm);
-    transform: translateY(0);
     transition: var(--transition);
-    position: relative;
-    z-index: 1;
+    border: 2px solid transparent;
 }
 
 .expertise-card:hover {
     transform: translateY(-10px);
+    border-color: var(--primary-color);
     box-shadow: var(--shadow-lg);
-}
-
-.expertise-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg, var(--primary-color), transparent);
-    opacity: 0;
-    transition: var(--transition);
-    z-index: -1;
-    border-radius: 15px;
-}
-
-.expertise-card:hover::before {
-    opacity: 0.1;
 }
 
 .achievement-counter {
     font-size: 3rem;
-    font-weight: 700;
+    font-weight: bold;
     color: var(--primary-color);
-    margin-bottom: 1rem;
-    display: inline-block;
+    animation: countUp 1s ease-out forwards;
 }
 
+/* Process Section */
 .service-process {
-    position: relative;
-    padding: 60px 0;
+    padding: 80px 0;
+    background-color: var(--light-color);
 }
 
 .process-step {
     text-align: center;
-    padding: 2rem;
-    position: relative;
-}
-
-.process-step::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: -50px;
-    width: 100px;
-    height: 2px;
-    background: var(--primary-color);
-    transform: translateY(-50%);
-}
-
-.process-step:last-child::after {
-    display: none;
+    padding: 30px 20px;
 }
 
 .process-icon {
     width: 80px;
     height: 80px;
-    line-height: 80px;
-    text-align: center;
-    border-radius: 50%;
+    margin: 0 auto 20px;
     background: var(--primary-color);
-    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.process-icon i {
     font-size: 2rem;
-    margin: 0 auto 1.5rem;
-    position: relative;
-    z-index: 1;
+    color: var(--white);
+}
+.process-icon:hover {
+    background: var(--text-muted);
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
 }
 
-.process-icon::before {
-    content: '';
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    right: -5px;
-    bottom: -5px;
-    background: var(--primary-color);
-    opacity: 0.3;
-    border-radius: 50%;
-    z-index: -1;
-    animation: pulse 2s infinite;
+
+/* Highlight Box */
+.highlight-box {
+    background-color: var(--white);
+    padding: 60px 0;
 }
 
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-        opacity: 0.3;
-    }
-    70% {
-        transform: scale(1.2);
-        opacity: 0;
-    }
-    100% {
-        transform: scale(1);
-        opacity: 0;
-    }
+.highlight-box i.fa-check-circle {
+    color: var(--primary-color);
 }
 
+/* Testimonials */
 .testimonial-section {
-    background-color: #f8f9fa;
     padding: 80px 0;
+    background-color: var(--light-color);
 }
 
 .testimonial-card {
     background: var(--white);
-    border-radius: 15px;
-    padding: 2rem;
-    margin: 1rem;
+    padding: 30px;
+    border-radius: 16px;
     box-shadow: var(--shadow-sm);
+    margin-bottom: 30px;
     transition: var(--transition);
+    border: 2px solid transparent;
 }
 
 .testimonial-card:hover {
     transform: translateY(-5px);
+    border-color: var(--primary-color);
     box-shadow: var(--shadow-lg);
 }
 
@@ -154,91 +104,39 @@
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    margin-bottom: 1rem;
+    margin-bottom: 20px;
 }
 
-.highlight-box {
-    background: linear-gradient(45deg, var(--primary-color), #8fb48e);
-    padding: 3rem;
-    border-radius: 15px;
-    color: var(--white);
-    margin: 4rem 0;
-    position: relative;
-    overflow: hidden;
-}
-
-.highlight-box::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 60%);
-    animation: rotate 20s linear infinite;
-}
-
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-.stat-card {
-    position: relative;
-    overflow: hidden;
-}
-
-.stat-card::after {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(124,157,123,0.1) 0%, transparent 70%);
-    opacity: 0;
-    transition: var(--transition);
-}
-
-.stat-card:hover::after {
-    opacity: 1;
-    transform: scale(1.2);
-}
-
+/* CTA Section */
 .cta-section {
-    background: var(--primary-color);
+    background-color: var(--primary-color);
     padding: 80px 0;
-    position: relative;
-    overflow: hidden;
 }
 
-.cta-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('pattern.png') repeat;
-    opacity: 0.1;
-}
-
-.floating-image {
-    animation: float 6s ease-in-out infinite;
-}
-
-@keyframes float {
-    0% {
-        transform: translateY(0px);
+/* Responsive */
+@media (max-width: 991.98px) {
+    .hero-section {
+        padding: 140px 0 80px;
     }
-    50% {
-        transform: translateY(-20px);
+    
+    .expertise-card, .testimonial-card {
+        margin-bottom: 30px;
     }
-    100% {
-        transform: translateY(0px);
+    
+    .process-step {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero-buttons .btn {
+        display: block;
+        width: 100%;
+        margin: 1rem 0;
+    }
+    
+    .hero-image img {
+        transform: none;
+        margin-top: 2rem;
     }
 }

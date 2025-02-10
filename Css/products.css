@@ -20,6 +20,17 @@
     text-align: center;
     color: var(--text-light);
 }
+.hero-image img {
+    border-radius: 20px;
+    box-shadow: var(--shadow-lg);
+    transform: perspective(1000px) rotateY(15deg); /* Comienza sin rotación */
+    transition: var(--transition);
+  }
+  
+  .hero-image img:hover {
+    transform: perspective(1000px) rotateY(0deg); /* Gira cuando se hace hover */
+  }
+  
 
 .hero-title {
     font-size: 3rem;
