@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Hiperfarm - Líder en nutrición animal y equipamiento agropecuario" />
+    <meta
+      name="description"
+      content="Hiperfarm - Líder en nutrición animal y equipamiento agropecuario"
+    />
     <link rel="icon" type="image/png" href="../img/Logo-Hiperfarm.png" />
     <title>Productos - Hiperfarm</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
+    />
     <link rel="stylesheet" href="../Css/style.css" />
-    <link rel="stylesheet" href="/Css/products.css">
-</head>
-<body>
-
-
+    <link rel="stylesheet" href="/Css/products.css" />
+  </head>
+  <body>
     <!-- ---------------------------------------------------------------------------------------------------- -->
 
     <!-- Header -->
@@ -22,12 +32,22 @@
       <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container-fluid">
           <!-- Logo - Zona Izquierda -->
-          <a class="navbar-brand" href="#">
-            <img src="../img/hiperfarm.png" alt="Hiperfarm Logo" class="logo" height="50" />
+          <a class="navbar-brand" href="../index.html">
+            <img
+              src="/img/hiperfarm.png"
+              alt="Hiperfarm Logo"
+              class="logo"
+              height="50"
+            />
           </a>
 
           <!-- Botón Toggle para móvil -->
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarMain"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
 
@@ -39,260 +59,330 @@
                 <a class="nav-link" href="../index.html">Inicio</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="productosDropdown" data-toggle="dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="Vistas/producto.html"
+                  id="productosDropdown"
+                  data-toggle="dropdown"
+                >
                   Productos
                 </a>
                 <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Nutrición Animal</a>
-                  <a class="dropdown-item" href="#">Equipamiento Agropecuario</a>
-                  <a class="dropdown-item" href="#">Suplementos</a>
+                  <a class="dropdown-item" href="Vistas/producto.html"
+                    >Nutrición Animal</a
+                  >
+                  <a class="dropdown-item" href="Vistas/producto.html"
+                    >Equipamiento Agropecuario</a
+                  >
+                  <a class="dropdown-item" href="Vistas/producto.html"
+                    >Suplementos</a
+                  >
                 </div>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#servicios">Servicios</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contacto">Contacto</a>
+                <a class="nav-link" href="contacto.html">Contacto</a>
               </li>
             </ul>
 
             <!-- Botones de Autenticación - Zona Derecha -->
             <div class="nav-buttons ms-auto">
-              <a href="#login" class="btn btn-outline-secondary me-2">Iniciar Sesión</a>
+              <a href="#login" class="btn btn-outline-secondary me-2"
+                >Iniciar Sesión</a
+              >
               <a href="#registro" class="btn btn-dark">Registrarse</a>
             </div>
           </div>
         </div>
       </nav>
     </header>
-<!-- ---------------------------------------------------------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------------------------- -->
 
-<!-- Sección de productos -->
-<div class="products-hero">
-    <div class="container">
-        <h1 class="hero-title mt-5">Productos Hiperfarm</h1>
-        <p class="hero-subtitle">Soluciones de calidad para el sector agropecuario</p>
-    </div>
-</div>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h1 class="text-white mb-4">Soluciones Agropecuarias Integrales</h1>
+            <p class="lead text-white mb-4">
+              Productos de nutrición animal y equipamiento agropecuario de
+              última tecnología para optimizar la productividad en su finca.
+            </p>
+            <div class="hero-buttons">
+              <a href="#productos" class="btn btn-success btn-lg px-4"
+                >Ver Productos</a
+              >
+              <a href="#contacto" class="btn btn-outline-light btn-lg ml-3"
+                >Contáctenos</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-6 mt-5 mt-lg-0">
+            <div class="hero-image">
+              <img
+                src="../img/catalogo.png"
+                alt="Granja moderna"
+                class="img-fluid rounded shadow"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<div class="products-filters">
-    <div class="container">
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+
+    <div class="products-filters">
+      <div class="container">
         <div class="filters-wrapper">
-            <button class="filter-btn active" data-category="todos">Todos</button>
-            <button class="filter-btn" data-category="nutricion">Nutrición</button>
-            <button class="filter-btn" data-category="equipamiento">Equipamiento</button>
-            <button class="filter-btn" data-category="suplementos">Suplementos</button>
-            <button class="filter-btn" data-category="salud">Salud Animal</button>
+          <button class="filter-btn active" data-category="todos">Todos</button>
+          <button class="filter-btn" data-category="nutricion">
+            Nutrición
+          </button>
+          <button class="filter-btn" data-category="equipamiento">
+            Equipamiento
+          </button>
+          <button class="filter-btn" data-category="suplementos">
+            Suplementos
+          </button>
+          <button class="filter-btn" data-category="salud">Salud Animal</button>
         </div>
+      </div>
     </div>
-</div>
 
-<section class="products-section">
-    <div class="container">
+    <section class="products-section">
+      <div class="container">
         <div class="products-grid">
-            <!-- Producto 1 -->
-            <article class="product-item" data-category="nutricion">
-                <div class="product-image">
-                    <img src="../img/pienso13.png" alt="Pienso Premium Vacuno">
-                    <div class="product-overlay">
-                        <button class="btn-details">Ver Detalles</button>
-                    </div>
-                </div>
-                <div class="product-content">
-                    <span class="product-category">Nutrición Animal</span>
-                    <h3 class="product-title">Pienso Premium Vacuno</h3>
-                    <p class="product-description">Alimento completo para ganado vacuno con vitaminas y minerales esenciales.</p>
-                    <div class="product-footer">
-                        <span class="product-price">30.00 €</span>
-                        <button class="btn-cart">
-                            <i class="fas fa-shopping-cart"></i>
-                            Añadir
-                        </button>
-                    </div>
-                </div>
-            </article>
+          <!-- Producto 1 -->
+          <article class="product-item" data-category="nutricion">
+            <div class="product-image">
+              <img src="../img/pienso13.png" alt="Alimento Nutriconej" />
+              <div class="product-overlay">
+                <button class="btn-details">Ver Detalles</button>
+              </div>
+            </div>
+            <div class="product-content">
+              <span class="product-category">Nutrición Animal</span>
+              <h3 class="product-title">Nutriconej</h3>
+              <p class="product-description">
+                Alimento completo diseñado para cubrir las necesidades de
+                conejos adultos y jóvenes.
+              </p>
+              <div class="product-footer">
+                <span class="product-price">18.00 €</span>
+                <button class="btn-cart">
+                  <i class="fas fa-shopping-cart"></i>
+                  Añadir
+                </button>
+              </div>
+            </div>
+          </article>
 
-            <!-- Producto 2 -->
-            <article class="product-item" data-category="nutricion">
-                <div class="product-image">
-                    <img src="../img/pienso11.jpg" alt="Pienso Porcino">
-                    <div class="product-overlay">
-                        <button class="btn-details">Ver Detalles</button>
-                    </div>
-                </div>
-                <div class="product-content">
-                    <span class="product-category">Nutrición Animal</span>
-                    <h3 class="product-title">Pienso Elite Porcino</h3>
-                    <p class="product-description">Alimento especialmente formulado para cerdos en fase de engorde.</p>
-                    <div class="product-footer">
-                        <span class="product-price">25.00 €</span>
-                        <button class="btn-cart">
-                            <i class="fas fa-shopping-cart"></i>
-                            Añadir
-                        </button>
-                    </div>
-                </div>
-            </article>
+          <!-- Producto 2 -->
+          <article class="product-item" data-category="nutricion">
+            <div class="product-image">
+              <img src="../img/pienso11.jpg" alt="Alimento Maxidog Grande" />
+              <div class="product-overlay">
+                <button class="btn-details">Ver Detalles</button>
+              </div>
+            </div>
+            <div class="product-content">
+              <span class="product-category">Nutrición Animal</span>
+              <h3 class="product-title">Maxidog Grande</h3>
+              <p class="product-description">
+                Fórmula de alta calidad específica para perros de razas grandes
+                con necesidades nutricionales avanzadas.
+              </p>
+              <div class="product-footer">
+                <span class="product-price">32.00 €</span>
+                <button class="btn-cart">
+                  <i class="fas fa-shopping-cart"></i>
+                  Añadir
+                </button>
+              </div>
+            </div>
+          </article>
 
-            <!-- Producto 3 -->
-            <article class="product-item" data-category="equipamiento">
-                <div class="product-image">
-                    <img src="../img/pienso8.png" alt="Bebedero Automático">
-                    <div class="product-overlay">
-                        <button class="btn-details">Ver Detalles</button>
-                    </div>
-                </div>
-                <div class="product-content">
-                    <span class="product-category">Equipamiento</span>
-                    <h3 class="product-title">Bebedero Automático Pro</h3>
-                    <p class="product-description">Sistema de bebedero con control de nivel y alta resistencia.</p>
-                    <div class="product-footer">
-                        <span class="product-price">120.00 €</span>
-                        <button class="btn-cart">
-                            <i class="fas fa-shopping-cart"></i>
-                            Añadir
-                        </button>
-                    </div>
-                </div>
-            </article>
+          <!-- Producto 3 -->
+          <article class="product-item" data-category="nutricion">
+            <div class="product-image">
+              <img src="../img/pienso8.png" alt="DogPower Plus" />
+              <div class="product-overlay">
+                <button class="btn-details">Ver Detalles</button>
+              </div>
+            </div>
+            <div class="product-content">
+              <span class="product-category">Nutrición Animal</span>
+              <h3 class="product-title">DogPower Plus</h3>
+              <p class="product-description">
+                Alimento energético para perros activos que necesitan
+                rendimiento extra cada día.
+              </p>
+              <div class="product-footer">
+                <span class="product-price">36.00 €</span>
+                <button class="btn-cart">
+                  <i class="fas fa-shopping-cart"></i>
+                  Añadir
+                </button>
+              </div>
+            </div>
+          </article>
 
-            <!-- Producto 4 -->
-            <article class="product-item" data-category="suplementos">
-                <div class="product-image">
-                    <img src="../img/pienso4.png" alt="Suplemento Mineral">
-                    <div class="product-overlay">
-                        <button class="btn-details">Ver Detalles</button>
-                    </div>
-                </div>
-                <div class="product-content">
-                    <span class="product-category">Suplementos</span>
-                    <h3 class="product-title">Complex Mineral Plus</h3>
-                    <p class="product-description">Suplemento mineral completo para todo tipo de ganado.</p>
-                    <div class="product-footer">
-                        <span class="product-price">45.00 €</span>
-                        <button class="btn-cart">
-                            <i class="fas fa-shopping-cart"></i>
-                            Añadir
-                        </button>
-                    </div>
-                </div>
-            </article>
+          <!-- Producto 4 -->
+          <article class="product-item" data-category="nutricion">
+            <div class="product-image">
+              <img src="../img/pienso4.png" alt="Energidog Adult" />
+              <div class="product-overlay">
+                <button class="btn-details">Ver Detalles</button>
+              </div>
+            </div>
+            <div class="product-content">
+              <span class="product-category">Nutrición Animal</span>
+              <h3 class="product-title">Energidog Adult</h3>
+              <p class="product-description">
+                Receta especializada para perros adultos con altos niveles de
+                actividad y energía.
+              </p>
+              <div class="product-footer">
+                <span class="product-price">38.00 €</span>
+                <button class="btn-cart">
+                  <i class="fas fa-shopping-cart"></i>
+                  Añadir
+                </button>
+              </div>
+            </div>
+          </article>
 
-            <!-- Producto 5 -->
-            <article class="product-item" data-category="equipamiento">
-                <div class="product-image">
-                    <img src="../img/pienso5.png" alt="Comedero Industrial">
-                    <div class="product-overlay">
-                        <button class="btn-details">Ver Detalles</button>
-                    </div>
-                </div>
-                <div class="product-content">
-                    <span class="product-category">Equipamiento</span>
-                    <h3 class="product-title">Comedero Industrial XL</h3>
-                    <p class="product-description">Comedero de acero inoxidable de alta capacidad.</p>
-                    <div class="product-footer">
-                        <span class="product-price">180.00 €</span>
-                        <button class="btn-cart">
-                            <i class="fas fa-shopping-cart"></i>
-                            Añadir
-                        </button>
-                    </div>
-                </div>
-            </article>
+          <!-- Producto 5 -->
+          <article class="product-item" data-category="nutricion">
+            <div class="product-image">
+              <img src="../img/pienso5.png" alt="BalancePet Medio" />
+              <div class="product-overlay">
+                <button class="btn-details">Ver Detalles</button>
+              </div>
+            </div>
+            <div class="product-content">
+              <span class="product-category">Nutrición Animal</span>
+              <h3 class="product-title">BalancePet Medio</h3>
+              <p class="product-description">
+                Nutrición equilibrada para perros de actividad moderada que
+                buscan mantener un peso saludable.
+              </p>
+              <div class="product-footer">
+                <span class="product-price">29.00 €</span>
+                <button class="btn-cart">
+                  <i class="fas fa-shopping-cart"></i>
+                  Añadir
+                </button>
+              </div>
+            </div>
+          </article>
 
-            <!-- Producto 6 -->
-            <article class="product-item" data-category="salud">
-                <div class="product-image">
-                    <img src="../img/pienso6.png" alt="Antiparasitario">
-                    <div class="product-overlay">
-                        <button class="btn-details">Ver Detalles</button>
-                    </div>
-                </div>
-                <div class="product-content">
-                    <span class="product-category">Salud Animal</span>
-                    <h3 class="product-title">Antiparasitario Total</h3>
-                    <p class="product-description">Tratamiento antiparasitario de amplio espectro.</p>
-                    <div class="product-footer">
-                        <span class="product-price">40.00 €</span>
-                        <button class="btn-cart">
-                            <i class="fas fa-shopping-cart"></i>
-                            Añadir
-                        </button>
-                    </div>
-                </div>
-            </article>
+          <!-- Producto 6 -->
+          <article class="product-item" data-category="nutricion">
+            <div class="product-image">
+              <img src="../img/pienso6.png" alt="BasicCare Dog" />
+              <div class="product-overlay">
+                <button class="btn-details">Ver Detalles</button>
+              </div>
+            </div>
+            <div class="product-content">
+              <span class="product-category">Nutrición Animal</span>
+              <h3 class="product-title">BasicCare Dog</h3>
+              <p class="product-description">
+                Fórmula esencial y económica que garantiza una nutrición básica
+                diaria.
+              </p>
+              <div class="product-footer">
+                <span class="product-price">24.00 €</span>
+                <button class="btn-cart">
+                  <i class="fas fa-shopping-cart"></i>
+                  Añadir
+                </button>
+              </div>
+            </div>
+          </article>
 
-            <!-- Producto 7 -->
-            <article class="product-item" data-category="nutricion">
-                <div class="product-image">
-                    <img src="../img/pienso7.png" alt="Antiparasitario">
-                    <div class="product-overlay">
-                        <button class="btn-details">Ver Detalles</button>
-                    </div>
-                </div>
-                <div class="product-content">
-                    <span class="product-category">Nutrición Animal</span>
-                    <h3 class="product-title">Pienso Aves de Corral</h3>
-                    <p class="product-description">Alimento completo para gallinas ponedoras.</p>
-                    <div class="product-footer">
-                        <span class="product-price">22.00 €</span>
-                        <button class="btn-cart">
-                            <i class="fas fa-shopping-cart"></i>
-                            Añadir
-                        </button>
-                    </div>
-                </div>
-            </article>
+          <!-- Producto 7 -->
+          <article class="product-item" data-category="nutricion">
+            <div class="product-image">
+              <img src="../img/pienso7.png" alt="Cachorro Vital Junior" />
+              <div class="product-overlay">
+                <button class="btn-details">Ver Detalles</button>
+              </div>
+            </div>
+            <div class="product-content">
+              <span class="product-category">Nutrición Animal</span>
+              <h3 class="product-title">Cachorro Vital Junior</h3>
+              <p class="product-description">
+                Alimento enriquecido con vitaminas y minerales para un
+                crecimiento óptimo en cachorros.
+              </p>
+              <div class="product-footer">
+                <span class="product-price">34.00 €</span>
+                <button class="btn-cart">
+                  <i class="fas fa-shopping-cart"></i>
+                  Añadir
+                </button>
+              </div>
+            </div>
+          </article>
 
-            <!-- Producto 8 -->
-            <article class="product-item" data-category="suplementos">
-                <div class="product-image">
-                    <img src="../img/pienso8.png" alt="Antiparasitario">
-                    <div class="product-overlay">
-                        <button class="btn-details">Ver Detalles</button>
-                    </div>
-                </div>
-                <div class="product-content">
-                    <span class="product-category">Suplementos</span>
-                    <h3 class="product-title">Complejo Vitamínico</h3>
-                    <p class="product-description">Suplemento vitamínico concentrado para ganado.</p>
-                    <div class="product-footer">
-                        <span class="product-price">35.00 €</span>
-                        <button class="btn-cart">
-                            <i class="fas fa-shopping-cart"></i>
-                            Añadir
-                        </button>
-                    </div>
-                </div>
-            </article>
+          <!-- Producto 8 -->
+          <article class="product-item" data-category="nutricion">
+            <div class="product-image">
+              <img src="../img/pienso9.png" alt="CatEnergy Plus" />
+              <div class="product-overlay">
+                <button class="btn-details">Ver Detalles</button>
+              </div>
+            </div>
+            <div class="product-content">
+              <span class="product-category">Nutrición Animal</span>
+              <h3 class="product-title">CatEnergy Plus</h3>
+              <p class="product-description">
+                Fórmula premium para gatos activos que necesitan un extra de
+                energía y vitalidad.
+              </p>
+              <div class="product-footer">
+                <span class="product-price">26.00 €</span>
+                <button class="btn-cart">
+                  <i class="fas fa-shopping-cart"></i>
+                  Añadir
+                </button>
+              </div>
+            </div>
+          </article>
 
-            <!-- Producto 9 -->
-            <article class="product-item" data-category="nutricion">
-                <div class="product-image">
-                    <img src="../img/pienso9.png" alt="Antiparasitario">
-                    <div class="product-overlay">
-                        <button class="btn-details">Ver Detalles</button>
-                    </div>
-                </div>
-                <div class="product-content">
-                    <span class="product-category">Nutrición Animal</span>
-                    <h3 class="product-title">Pienso Corderos</h3>
-                    <p class="product-description">Alimento especial para corderos en crecimiento.</p>
-                    <div class="product-footer">
-                        <span class="product-price">28.00 €</span>
-                        <button class="btn-cart">
-                            <i class="fas fa-shopping-cart"></i>
-                            Añadir
-                        </button>
-                    </div>
-                </div>
-            </article>
+                          <!-- Producto 9 -->
+                          <article class="product-item" data-category="nutricion">
+                            <div class="product-image">
+                                <img src="../img/pienso12.png" alt="PerdizCare Maintenance">
+                                <div class="product-overlay">
+                                    <button class="btn-details">Ver Detalles</button>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <span class="product-category">Nutrición Animal</span>
+                                <h3 class="product-title">PerdizCare Maintenance</h3>
+                                <p class="product-description">Alimento formulado especialmente para el mantenimiento y la salud de perdices en condiciones óptimas.</p>
+                                <div class="product-footer">
+                                    <span class="product-price">22.00 €</span>
+                                    <button class="btn-cart">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        Añadir
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+        
 
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!-- ---------------------------------------------------------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------------------------- -->
 
     <!-- Footer -->
     <footer class="footer-main text-white">
@@ -304,7 +394,9 @@
             <p class="mb-0">
               Líderes en soluciones agropecuarias integrales desde 1995.
             </p>
-            <a href="#inicio" class="text-white d-block mt-3">Volver al Inicio</a>
+            <a href="#inicio" class="text-white d-block mt-3"
+              >Volver al Inicio</a
+            >
           </div>
           <!-- Sección de Contacto -->
           <div class="col-lg-3 col-md-6 p-4 text-center text-lg-left">
@@ -320,12 +412,20 @@
           <!-- Sección de Redes Sociales y Mapa del Sitio -->
           <div class="col-lg-3 col-md-6 p-4 text-center text-lg-left">
             <h4 class="h5 mb-3">Síguenos</h4>
-            <div class="social-links d-flex justify-content-center justify-content-lg-start">
-              <a href="#" class="text-white mr-3"><i class="fab fa-facebook"></i></a>
-              <a href="#" class="text-white mr-3"><i class="fab fa-instagram"></i></a>
+            <div
+              class="social-links d-flex justify-content-center justify-content-lg-start"
+            >
+              <a href="#" class="text-white mr-3"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="text-white mr-3"
+                ><i class="fab fa-instagram"></i
+              ></a>
               <a href="#" class="text-white"><i class="fab fa-linkedin"></i></a>
             </div>
-            <a href="#mapa-sitio" class="text-white d-block mt-3">Mapa del Sitio</a>
+            <a href="#mapa-sitio" class="text-white d-block mt-3"
+              >Mapa del Sitio</a
+            >
           </div>
         </div>
         <!-- Línea Divisoria -->
@@ -338,11 +438,10 @@
         </div>
       </div>
     </footer>
-<!-- ---------------------------------------------------------------------------------------------------- -->
-
+    <!-- ---------------------------------------------------------------------------------------------------- -->
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
