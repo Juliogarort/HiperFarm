@@ -1,12 +1,3 @@
-/* Hero Section */
-.hero-section {
-    background-color: var(--primary-color);
-    padding: 130px 0 60px;
-    position: relative;
-    overflow: hidden;
-}
-
-
 /* Expertise Section */
 .expertise-section {
     padding: 80px 0;
@@ -112,6 +103,13 @@
     background-color: var(--primary-color);
     padding: 80px 0;
 }
+/* Hero Section */
+.hero-section {
+    background-color: var(--primary-color);
+    padding: 130px 0 60px;
+    position: relative;
+    overflow: hidden;
+}
 
 /* Responsive */
 @media (max-width: 991.98px) {
@@ -138,5 +136,161 @@
     .hero-image img {
         transform: none;
         margin-top: 2rem;
+    }
+}
+
+/* --------------------------------------------------- */
+
+/* Sección del Carrusel de Servicios */
+.services-carousel-section {
+    padding: 80px 0;
+    background-color: var(--light-color);
+}
+
+/* Estilos del Carrusel */
+.carousel-inner {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.carousel-content {
+    background: var(--white);
+    padding: 40px;
+    min-height: 500px;
+}
+.carousel .btn {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: black;
+}
+
+/* Indicadores del Carrusel */
+.carousel-indicators {
+    bottom: -50px;
+}
+
+.carousel-indicators li {
+    background-color: var(--primary-color);
+    opacity: 0.5;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+}
+
+/* Controles del Carrusel */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 50px;
+    height: 50px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    opacity: 0.8;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-control-prev {
+    left: -50px;
+}
+
+.carousel-control-next {
+    right: -50px;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
+}
+
+/* Contenido del Servicio */
+.service-info {
+    padding: 20px;
+}
+
+.service-info h3 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.service-features {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.service-features li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.service-features li i {
+    color: var(--primary-color);
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+/* Imágenes del Carrusel */
+.carousel-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.carousel-item:hover img {
+    transform: scale(1.05);
+}
+
+
+/* Botón del Servicio */
+.service-info .btn {
+    padding: 12px 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.service-info .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Responsive */
+@media (max-width: 991.98px) {
+    .carousel-content {
+        padding: 20px;
+    }
+
+    .service-info {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none;
+    }
+
+    .carousel-item img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .carousel-content {
+        min-height: auto;
+    }
+
+    .carousel-item img {
+        height: 250px;
     }
 }

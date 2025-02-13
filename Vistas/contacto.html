@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Hiperfarm - Líder en nutrición animal y equipamiento agropecuario"
+    />
+    <link rel="icon" type="image/png" href="../img/Logo-Hiperfarm.png" />
+
     <title>Contacto</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,6 +28,13 @@
       <h3>Envíanos tus comentarios</h3>
       <form class="form" action="../index.html" method="GET">
         <input type="email" placeholder="Email"  />
+        <select name="motivo" >
+          <option value="" disabled selected>Selecciona el motivo de la consulta</option>
+          <option value="asesoria">Asesoría Técnica</option>
+          <option value="productos">Información de Productos</option>
+          <option value="presupuesto">Solicitud de Presupuesto</option>
+          <option value="otro">Otro</option>
+      </select>
         <textarea placeholder="Describe tu mensaje aquí..." ></textarea>
         <button type="submit">
           <p>Enviar mensaje</p>
