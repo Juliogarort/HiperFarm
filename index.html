@@ -23,6 +23,8 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
     />
     <link rel="stylesheet" href="Css/style.css" />
+      <link rel="stylesheet" href="Css/historia.css">
+      <script src="Js/index.js"></script>
   </head>
   <body>
     <!-- ---------------------------------------------------------------------------------- -->
@@ -58,26 +60,8 @@
               <li class="nav-item">
                 <a class="nav-link" href="index.html">Inicio</a>
               </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="Vistas/producto.html"
-                  id="productosDropdown"
-                  data-toggle="dropdown"
-                >
-                  Productos
-                </a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="Vistas/producto.html"
-                    >Nutrición Animal</a
-                  >
-                  <a class="dropdown-item" href="Vistas/producto.html"
-                    >Equipamiento Agropecuario</a
-                  >
-                  <a class="dropdown-item" href="Vistas/producto.html"
-                    >Suplementos</a
-                  >
-                </div>
+              <li class="nav-item">
+                <a class="nav-link" href="Vistas/producto.html">Productos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="Vistas/servicios.html">Servicios</a>
@@ -109,10 +93,12 @@
               generación para optimizar su producción.
             </p>
             <div class="hero-buttons">
-              <a href="#productos" class="btn btn-success btn-lg px-4"
+              <a href="Vistas/producto.html" class="btn btn-success btn-lg px-4"
                 >Ver Productos</a
               >
-              <a href="#contacto" class="btn btn-outline-light btn-lg ml-3"
+              <a
+                href="Vistas/contacto.html"
+                class="btn btn-outline-light btn-lg ml-3"
                 >Contáctenos</a
               >
             </div>
@@ -172,37 +158,78 @@
 
       <!-- ---------------------------------------------------------------------------------- -->
 
-      <!-- Sección de Estadísticas -->
-      <section class="stats-section">
-        <div class="container">
-          <h2 class="text-center mb-5">Nuestros Números</h2>
-          <div class="row stats-container">
-            <div class="col-md-3 col-sm-6">
-              <div class="stat-card">
-                <i class="fas fa-building stat-icon"></i>
-                <div class="stat-number" data-target="28">0</div>
-                <div class="stat-label">Años de Experiencia</div>
+      <!-- Historia -->
+      <section class="timeline-3d-section">
+        <h2 class="timeline-title">Nuestra Evolución</h2>
+
+        <div class="timeline-container" id="timelineContainer">
+          <div class="timeline-track"></div>
+
+          <div class="milestone">
+            <div class="milestone-content">
+              <div class="milestone-front">
+                <i class="fas fa-seedling milestone-icon"></i>
+                <div class="milestone-year">1995</div>
+                <div class="milestone-title">Los Inicios</div>
+                <p class="milestone-description">Hover para más detalles</p>
+              </div>
+              <div class="milestone-back">
+                <p class="milestone-description">
+                  Comenzamos como una pequeña empresa familiar con una visión
+                  clara: revolucionar la nutrición animal con tecnología de
+                  vanguardia.
+                </p>
               </div>
             </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="stat-card">
-                <i class="fas fa-users stat-icon"></i>
-                <div class="stat-number" data-target="1000">0</div>
-                <div class="stat-label">Clientes Satisfechos</div>
+          </div>
+
+          <div class="milestone">
+            <div class="milestone-content">
+              <div class="milestone-front">
+                <i class="fas fa-flask milestone-icon"></i>
+                <div class="milestone-year">2005</div>
+                <div class="milestone-title">Innovación</div>
+                <p class="milestone-description">Hover para más detalles</p>
+              </div>
+              <div class="milestone-back">
+                <p class="milestone-description">
+                  Desarrollamos nuestra primera línea de suplementos premium,
+                  estableciendo nuevos estándares en la industria agropecuaria.
+                </p>
               </div>
             </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="stat-card">
-                <i class="fas fa-award stat-icon"></i>
-                <div class="stat-number" data-target="150">0</div>
-                <div class="stat-label">Productos Premium</div>
+          </div>
+
+          <div class="milestone">
+            <div class="milestone-content">
+              <div class="milestone-front">
+                <i class="fas fa-globe-americas milestone-icon"></i>
+                <div class="milestone-year">2015</div>
+                <div class="milestone-title">Expansión</div>
+                <p class="milestone-description">Hover para más detalles</p>
+              </div>
+              <div class="milestone-back">
+                <p class="milestone-description">
+                  Alcanzamos presencia internacional y desarrollamos soluciones
+                  personalizadas para diferentes regiones.
+                </p>
               </div>
             </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="stat-card">
-                <i class="fas fa-chart-line stat-icon"></i>
-                <div class="stat-number" data-target="25">0</div>
-                <div class="stat-label">Sucursales</div>
+          </div>
+
+          <div class="milestone">
+            <div class="milestone-content">
+              <div class="milestone-front">
+                <i class="fas fa-rocket milestone-icon"></i>
+                <div class="milestone-year">2023</div>
+                <div class="milestone-title">Futuro</div>
+                <p class="milestone-description">Hover para más detalles</p>
+              </div>
+              <div class="milestone-back">
+                <p class="milestone-description">
+                  Lideramos la transformación digital del sector con soluciones
+                  IoT y análisis predictivo para optimizar la producción.
+                </p>
               </div>
             </div>
           </div>
@@ -273,49 +300,5 @@
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Antes del cierre del body -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const numbers = document.querySelectorAll(".stat-number");
-
-        const observerOptions = {
-          threshold: 0.5,
-        };
-
-        const observer = new IntersectionObserver(function (entries) {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              const number = entry.target;
-              const target = parseInt(number.getAttribute("data-target"));
-              animateNumber(number, target);
-              observer.unobserve(number);
-            }
-          });
-        }, observerOptions);
-
-        numbers.forEach((number) => observer.observe(number));
-
-        function animateNumber(element, target) {
-          let current = 0;
-          const duration = 2000; // 2 segundos
-          const step = target / (duration / 16); // 60 FPS
-
-          const update = () => {
-            current += step;
-            if (current > target) {
-              current = target;
-            }
-            element.textContent = Math.floor(current);
-
-            if (current < target) {
-              requestAnimationFrame(update);
-            }
-          };
-
-          requestAnimationFrame(update);
-        }
-      });
-    </script>
   </body>
 </html>

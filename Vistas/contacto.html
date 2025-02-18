@@ -21,21 +21,24 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
     />
     <link rel="stylesheet" href="../Css/contacto.css" />
+    <script defer src="../Js/contacto.js"></script>
   </head>
   <body>
     <div class="card">
       <h2>Contacto</h2>
       <h3>Envíanos tus comentarios</h3>
-      <form class="form" action="../index.html" method="GET">
-        <input type="email" placeholder="Email"  />
-        <select name="motivo" >
-          <option value="" disabled selected>Selecciona el motivo de la consulta</option>
+      <form class="form" id="contactForm" action="../index.html" method="GET">
+        <input type="email" placeholder="Email" required />
+        <select name="motivo" required>
+          <option value="" disabled selected>
+            Selecciona el motivo de la consulta
+          </option>
           <option value="asesoria">Asesoría Técnica</option>
           <option value="productos">Información de Productos</option>
           <option value="presupuesto">Solicitud de Presupuesto</option>
           <option value="otro">Otro</option>
-      </select>
-        <textarea placeholder="Describe tu mensaje aquí..." ></textarea>
+        </select>
+        <textarea placeholder="Describe tu mensaje aquí..." required></textarea>
         <button type="submit">
           <p>Enviar mensaje</p>
           <span class="material-symbols-outlined"> arrow_forward </span>

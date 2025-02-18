@@ -99,22 +99,6 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-.dropdown-menu {
-  border: none;
-  box-shadow: var(--shadow-md);
-  border-radius: 8px;
-}
-
-.dropdown-item {
-  padding: 0.75rem 1.5rem;
-  transition: var(--transition);
-}
-
-.dropdown-item:hover {
-  background-color: var(--light-color);
-  color: var(--primary-color);
-}
-
 
 
 /* Hero Section */

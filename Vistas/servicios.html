@@ -8,7 +8,7 @@
       content="Hiperfarm - Líder en nutrición animal y equipamiento agropecuario"
     />
     <link rel="icon" type="image/png" href="../img/Logo-Hiperfarm.png" />
-    <title>Productos - Hiperfarm</title>
+    <title>Servicios - Hiperfarm</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
@@ -22,8 +22,8 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
     />
     <link rel="stylesheet" href="../Css/servicios.css" />
-
     <link rel="stylesheet" href="../Css/style.css" />
+    <script defer src="../Js/servicios.js"></script>
   </head>
   <body>
     <!-- ---------------------------------------------------------------------------------------------------- -->
@@ -60,23 +60,9 @@
                 <a class="nav-link" href="../index.html">Inicio</a>
               </li>
               <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="producto.html"
-                  id="productosDropdown"
-                  data-toggle="dropdown"
-                >
-                  Productos
-                </a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="producto.html"
-                    >Nutrición Animal</a
-                  >
-                  <a class="dropdown-item" href="producto.html"
-                    >Equipamiento Agropecuario</a
-                  >
-                  <a class="dropdown-item" href="producto.html">Suplementos</a>
-                </div>
+                <li class="nav-item">
+                  <a class="nav-link" href="producto.html">Productos</a>
+                </li>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="servicios.html">Servicios</a>
@@ -109,7 +95,7 @@
             <p class="lead text-white mb-4">
               Con más de 25 años de trayectoria, Hiperfarm se ha consolidado
               como líder en el sector, proporcionando soluciones innovadoras y
-              sostenibles para la agricultura moderna.
+              sostenibles para la agricultura.
             </p>
             <div class="hero-buttons">
               <a href="../Vistas/contacto.html" class="btn btn-success btn-lg px-4"
@@ -361,29 +347,29 @@
           <h2 class="text-center mb-5">Lo que dicen nuestros clientes</h2>
           <div class="row">
             <div class="col-md-4">
-              <div class="testimonial-card text-center">
+              <div class="testimonial-card">
                 <img
                   src="../img/titofloren.png"
                   alt="Cliente"
                   class="client-image"
                 />
-                <h4>Juan Pérez</h4>
-                <p class="text-muted">Ganadero</p>
-                <p>
+                <h4 class="text-center">Juan Pérez</h4>
+                <p class="text-muted text-center">Ganadero</p>
+                <p">
                   "La asesoría de Hiperfarm ha transformado la productividad de
                   mi finca. Los resultados han sido impresionantes."
                 </p>
               </div>
             </div>
             <div class="col-md-4">
-              <div class="testimonial-card text-center">
+              <div class="testimonial-card">
                 <img
                   src="../img/kiko.jpeg"
                   alt="Cliente"
                   class="client-image"
                 />
-                <h4>María González</h4>
-                <p class="text-muted">Agricultora</p>
+                <h4 class="text-center">María González</h4>
+                <p class="text-muted text-center">Agricultora</p>
                 <p>
                   "Gracias a las soluciones de nutrición animal de Hiperfarm,
                   hemos mejorado la salud de nuestro ganado y la eficiencia en
@@ -392,14 +378,14 @@
               </div>
             </div>
             <div class="col-md-4">
-              <div class="testimonial-card text-center">
+              <div class="testimonial-card">
                 <img
                   src="../img/zeñor.jpg"
                   alt="Cliente"
                   class="client-image"
                 />
-                <h4>Carlos Ramírez</h4>
-                <p class="text-muted">Productor agrícola</p>
+                <h4 class="text-center">Carlos Ramírez</h4>
+                <p class="text-muted text-center">Productor agrícola</p>
                 <p>
                   "El equipo de Hiperfarm nos proporcionó un diagnóstico
                   detallado y soluciones personalizadas que aumentaron el
@@ -422,7 +408,7 @@
             innovadoras para tu finca o empresa agrícola.
           </p>
           <a
-            href="mailto:contacto@hiperfarm.com"
+            href="contacto.html"
             class="btn btn-light btn-lg px-5"
             >Contactar Ahora</a
           >
@@ -491,19 +477,5 @@
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Contador de logros animados
-        $(document).ready(function() {
-            $('.achievement-counter').each(function() {
-                var $this = $(this);
-                $({ count: 0 }).animate({ count: $this.data('target') }, {
-                    duration: 2000,
-                    step: function() {
-                        $this.text(Math.floor(this.count));
-                    }
-                });
-            });
-        });
-    </script>
   </body>
 </html>

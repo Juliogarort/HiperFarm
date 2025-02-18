@@ -23,6 +23,7 @@
     />
     <link rel="stylesheet" href="../Css/style.css" />
     <link rel="stylesheet" href="/Css/products.css" />
+    <script defer src="../Js/productos.js"></script>
   </head>
   <body>
     <!-- ---------------------------------------------------------------------------------------------------- -->
@@ -59,25 +60,9 @@
                 <a class="nav-link" href="../index.html">Inicio</a>
               </li>
               <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="Vistas/producto.html"
-                  id="productosDropdown"
-                  data-toggle="dropdown"
-                >
-                  Productos
-                </a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="Vistas/producto.html"
-                    >Nutrición Animal</a
-                  >
-                  <a class="dropdown-item" href="Vistas/producto.html"
-                    >Equipamiento Agropecuario</a
-                  >
-                  <a class="dropdown-item" href="Vistas/producto.html"
-                    >Suplementos</a
-                  >
-                </div>
+                <li class="nav-item">
+                  <a class="nav-link" href="producto.html">Productos</a>
+                </li>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="servicios.html">Servicios</a>
@@ -387,7 +372,7 @@
           <!-- Nuevos Productos de Equipamiento -->
           <article class="product-item" data-category="equipamiento">
             <div class="product-image">
-              <img src="../img/equipamiento2.png" alt="Tractor Pro" />
+              <img src="../img/tractor.webp" alt="Tractor Pro" />
               <div class="product-overlay">
                 <button class="btn-details">Ver Detalles</button>
               </div>
@@ -399,7 +384,7 @@
                 Tractor de última tecnología para labores agrícolas intensivas.
               </p>
               <div class="product-footer">
-                <span class="product-price">25.000.00 €</span>
+                <span class="product-price">115.000.00 €</span>
                 <button class="btn-cart">
                   <i class="fas fa-shopping-cart"></i>
                   Añadir
@@ -410,7 +395,7 @@
 
           <article class="product-item" data-category="equipamiento">
             <div class="product-image">
-              <img src="../img/equipamiento3.png" alt="Sistema de Riego" />
+              <img src="../img/riego.jpg" alt="Sistema de Riego" />
               <div class="product-overlay">
                 <button class="btn-details">Ver Detalles</button>
               </div>
@@ -435,7 +420,7 @@
           <!-- Nuevos Productos de Suplementos -->
           <article class="product-item" data-category="suplementos">
             <div class="product-image">
-              <img src="../img/suplemento3.png" alt="Vitamina Plus" />
+              <img src="../img/vitamina.png" alt="Vitamina Plus" />
               <div class="product-overlay">
                 <button class="btn-details">Ver Detalles</button>
               </div>
@@ -459,7 +444,7 @@
 
           <article class="product-item" data-category="suplementos">
             <div class="product-image">
-              <img src="../img/suplemento4.png" alt="Omega Animal" />
+              <img src="../img/omega.webp" alt="Omega Animal" />
               <div class="product-overlay">
                 <button class="btn-details">Ver Detalles</button>
               </div>
@@ -484,7 +469,7 @@
           <!-- Nuevos Productos de Salud Animal -->
           <article class="product-item" data-category="salud">
             <div class="product-image">
-              <img src="../img/salud3.png" alt="Antiparasitario X" />
+              <img src="../img/parasitos.png" alt="Antiparasitario X" />
               <div class="product-overlay">
                 <button class="btn-details">Ver Detalles</button>
               </div>
@@ -508,7 +493,7 @@
 
           <article class="product-item" data-category="salud">
             <div class="product-image">
-              <img src="../img/salud4.png" alt="Cuidado Dental" />
+              <img src="../img/dental.jpeg" alt="Cuidado Dental" />
               <div class="product-overlay">
                 <button class="btn-details">Ver Detalles</button>
               </div>
@@ -595,23 +580,4 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
   </body>
-  <script>
-    $(document).ready(function () {
-      $(".filter-btn").click(function () {
-        var category = $(this).attr("data-category");
-
-        $(".filter-btn").removeClass("active");
-        $(this).addClass("active");
-
-        if (category === "todos") {
-          $(".product-item").show();
-        } else {
-          $(".product-item")
-            .hide()
-            .filter("[data-category='" + category + "']")
-            .show();
-        }
-      });
-    });
-  </script>
 </html>

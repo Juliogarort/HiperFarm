@@ -69,33 +69,40 @@
     color: var(--primary-color);
 }
 
-/* Testimonials */
+/* Testimonios */
 .testimonial-section {
     padding: 80px 0;
     background-color: var(--light-color);
-}
-
-.testimonial-card {
+  }
+  
+  .testimonial-card {
     background: var(--white);
     padding: 30px;
     border-radius: 16px;
     box-shadow: var(--shadow-sm);
     margin-bottom: 30px;
-    transition: var(--transition);
     border: 2px solid transparent;
-}
-
-.testimonial-card:hover {
+    transition: var(--transition);
+    height: 100%; /* Para ocupar todo el espacio disponible en la columna */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .testimonial-card:hover {
     transform: translateY(-5px);
     border-color: var(--primary-color);
     box-shadow: var(--shadow-lg);
-}
+  }
 
 .client-image {
     width: 80px;
     height: 80px;
     border-radius: 50%;
     margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* CTA Section */
