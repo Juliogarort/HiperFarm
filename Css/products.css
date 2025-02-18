@@ -316,3 +316,9 @@
 .product-item {
     animation: fadeIn 0.6s ease-out;
 }
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
