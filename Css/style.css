@@ -9,9 +9,9 @@
   --text-light: #7C9D7B; /* Verde suave para texto secundario */
   --text-muted: #666666; /* Gris medio para texto terciario */
   --white: #d9d9d9;
-  --shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
-  --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
-  --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+  --shadow-sm: 0 2px 4px rgba(0,0,0,0.5);
+  --shadow-md: 0 4px 6px rgba(0,0,0,0.5);
+  --shadow-lg: 0 10px 15px rgba(0,0,0,0.5);
   --transition: all 0.3s ease;
 }
 
@@ -288,63 +288,3 @@ h1, h2, h3, h4, h5, h6 {
 
 /* <!-- ---------------------------------------------------------------------------------- --> */
 
-/* Sección de Estadísticas */
-.stats-section {
-  background-color: var(--white);
-  padding: 80px 0;
-  margin: 40px 0;
-}
-
-.stat-card {
-  text-align: center;
-  padding: 2rem;
-  background-color: var(--white);
-  border-radius: 16px;
-  box-shadow: var(--shadow-sm);
-  transition: var(--transition);
-  border: 2px solid transparent;
-  margin-bottom: 20px;
-}
-
-.stat-card:hover {
-  transform: translateY(-10px);
-  border-color: var(--primary-color);
-  box-shadow: var(--shadow-lg);
-}
-
-.stat-icon {
-  font-size: 2.5rem;
-  color: var(--primary-color);
-  margin-bottom: 1.5rem;
-}
-
-.stat-number {
-  font-size: 3rem;
-  font-weight: 700;
-  color: var(--text-dark);
-  margin-bottom: 0.5rem;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.stat-label {
-  color: var(--text-muted);
-  font-size: 1.1rem;
-}
-
-/* Animación para los números */
-@keyframes countUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.stat-number {
-  animation: countUp 1s ease-out forwards;
-}
-
-/* <!-- ---------------------------------------------------------------------------------- --> */
