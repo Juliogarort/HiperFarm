@@ -1,0 +1,56 @@
+/* Estilos básicos para el modal de login */
+.modal-content {
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.modal-header {
+    background-color: #7C9D7B;
+    border-bottom: none;
+    border-radius: 15px 15px 0 0;
+    padding: 20px;
+}
+
+.modal-title {
+    color: white;
+    font-weight: 600;
+}
+
+.modal-body {
+    padding: 30px;
+}
+
+.form-control {
+    border-radius: 8px;
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+}
+
+.form-control:focus {
+    border-color: #7C9D7B;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+.btn-success {
+    border-radius: 8px;
+    padding: 12px;
+    font-weight: 500;
+}
+
+.text-muted {
+    color: #6c757d;
+    text-decoration: none;
+}
+
+.text-muted:hover {
+    color: #28a745;
+    text-decoration: underline;
+}
+
+#loginError {
+    background-color: #fff5f5;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
